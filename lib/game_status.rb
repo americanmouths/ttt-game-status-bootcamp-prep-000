@@ -54,6 +54,6 @@ def winner(board)
   if winning_combo = won?(board)
     board[winning_combo.first]
   else
-    return nil
+    nil
   end
 end
