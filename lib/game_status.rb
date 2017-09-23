@@ -21,6 +21,8 @@ def won?(board)
       return win_combo
     elsif board[win_combo[0]] == "O" && board[win_combo[2]] == "O" && board[win_combo[2]] == "O"
       return win_combo
+    elsif 
+      position_taken?(board, win_combo=[0])
     else
     end
   end
