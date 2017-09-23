@@ -51,8 +51,9 @@ def over?(board)
 end
 
 def winner(board)
-  if winning_combo = won?(board)
-    board[winning_combo.first]
+  token = won?(board)
+  if token
+    board[token[0]
   else
     nil
   end
