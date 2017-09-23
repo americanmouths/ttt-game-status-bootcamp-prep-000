@@ -41,7 +41,6 @@ def draw?(board)
 full?(board) && !won?(board)
 end
 
-
 def over?(board)
   if full?(board) || won?(board)
     true
@@ -53,7 +52,7 @@ end
 def winner(board)
   token = won?(board)
   if token
-    board[token[0]
+    board[token[0]]
   else
     nil
   end
